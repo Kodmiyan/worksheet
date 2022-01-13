@@ -1,0 +1,27 @@
+import 'package:flutter/material.dart';
+
+class ModelGrid1 extends StatelessWidget {
+  const ModelGrid1({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Column(
+      mainAxisSize: MainAxisSize.max,
+      children: [
+        Expanded(
+          child: Hero(
+            tag: 'modelgrid1',
+            child: Container(
+              decoration: const BoxDecoration(
+                image: DecorationImage(
+                    image: AssetImage("Assets/modelgrid1.jpeg"),
+                    fit: BoxFit.cover),
+                color: Colors.red,
+              ),
+            ),
+          ),
+        ),
+      ],
+    );
+  }
+}
